@@ -14,6 +14,7 @@ export default function EpaperView() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [currentPage, setCurrentPage] = useState(0);
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
   useEffect(() => {
     if (!id) return;
@@ -138,7 +139,7 @@ export default function EpaperView() {
             </div>
 
             <img
-              src={`http://localhost:5000/${epaper.images[currentPage].imageUrl}`}
+              src={`${API_URL}/${epaper.images[currentPage].imageUrl}`}
               alt={`Page ${epaper.images[currentPage].pageNumber}`}
               className="max-w-full h-auto mx-auto rounded-lg shadow-lg"
             />
@@ -169,7 +170,7 @@ export default function EpaperView() {
                 }`}
               >
                 <img
-                  src={`http://localhost:5000/${image.imageUrl}`}
+                  src={`${API_URL}/${image.imageUrl}`}
                   alt={`Thumbnail ${index + 1}`}
                   className="w-full h-32 object-cover"
                 />

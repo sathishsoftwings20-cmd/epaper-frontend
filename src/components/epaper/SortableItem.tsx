@@ -31,6 +31,7 @@ export function SortableItem({
     transition,
     opacity: isDragging ? 0.5 : 1,
   };
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
   return (
     <div
@@ -63,7 +64,7 @@ export function SortableItem({
 
         <div className="w-16 h-16 flex-shrink-0">
           <img
-            src={`http://localhost:5000/${image.imageUrl}`}
+            src={`${API_URL}/${image.imageUrl}`}
             alt={image.originalName}
             className="w-full h-full object-cover rounded"
           />

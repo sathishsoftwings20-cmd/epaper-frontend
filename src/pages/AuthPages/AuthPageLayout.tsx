@@ -25,7 +25,12 @@ export default function AuthLayout({
                 />
               </Link>
               <p className="text-center text-gray-400 dark:text-white/60">
+<<<<<<< HEAD
  Latest News in Coimbatore, Chennai and across Tamil Nadu              </p>
+=======
+                Latest News in Coimbatore, Chennai and across Tamil Nadu
+              </p>
+>>>>>>> 72c3f4d (Updated Epaper components and auth layout)
             </div>
           </div>
         </div>
