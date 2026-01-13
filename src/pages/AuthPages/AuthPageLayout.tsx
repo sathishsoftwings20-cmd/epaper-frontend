@@ -25,8 +25,7 @@ export default function AuthLayout({
                 />
               </Link>
               <p className="text-center text-gray-400 dark:text-white/60">
-                Free and Open-Source Tailwind CSS Admin Dashboard Template
-              </p>
+ Latest News in Coimbatore, Chennai and across Tamil Nadu              </p>
             </div>
           </div>
         </div>
