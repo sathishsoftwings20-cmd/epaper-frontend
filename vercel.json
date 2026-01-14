@@ -1,12 +1,10 @@
 {
   "routes": [
-    {
-      "src": "^/(assets|favicon.ico|robots.txt|manifest.json)/(.*)",
-      "dest": "/$1/$2"
-    },
-    {
-      "src": "/.*",
-      "dest": "/index.html"
-    }
+    { "src": "^/assets/(.*)", "dest": "/assets/$1" },
+    { "src": "^/favicon.ico$", "dest": "/favicon.ico" },
+    { "src": "^/robots.txt$", "dest": "/robots.txt" },
+    { "src": "^/manifest.json$", "dest": "/manifest.json" },
+    { "src": "^/api/(.*)", "dest": "/api/$1" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
